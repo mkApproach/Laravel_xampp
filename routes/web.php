@@ -17,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 //Auth::routes();
 
-Route::get('/', function () {
-   return view('common');
-});
+Route::get('/', [App\Http\Controllers\HelloController::class, 'index']);
 
 Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index']);
 Route::get('/me', [App\Http\Controllers\meController::class, 'index']);
