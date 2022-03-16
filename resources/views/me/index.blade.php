@@ -12,6 +12,6 @@ class HelloController extends Controller
         $data = [
             'msg'=>'this is sample message.',
         ];
-        return view('me.index', $data);
+        return view('hello.index', $data);
     }
 }
