@@ -22,3 +22,6 @@ Route::get('/', [App\Http\Controllers\HelloController::class, 'index']);
 Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index']);
 Route::get('/me', [App\Http\Controllers\meController::class, 'index']);
 
+Route::get('/a', function () {
+   return view('welcome');
+});
