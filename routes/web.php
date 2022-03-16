@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HelloController::class, 'index']);
 
-Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index']);
+//Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index']);
 //Route::get('/', [App\Http\Controllers\MeController::class, 'index']);
 /*
 Route::get('/', function () {
