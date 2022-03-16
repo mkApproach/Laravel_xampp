@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/hello', 'HelloController@index')->name('hello.index');
+Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index'])->name('hello.index');
