@@ -1,5 +1,8 @@
 <?php
 
+//use App\Http\Controllers;
+//use App\Http\Controllers\meController;
+//use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Auth::routes();
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('common');
 });
 
 Route::get('/hello', [App\Http\Controllers\HelloController::class, 'index']);
+Route::get('/me', [App\Http\Controllers\meController::class, 'index']);
+
